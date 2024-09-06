@@ -5,4 +5,11 @@
 Программа должна вывести одно число — максимальное число, кратное 5.
 '''
 
-print("Hello, Stas!")
+max_number = 0
+n = int(input())
+for i in range(n):
+    number = int(input())
+    if number % 5 == 0 and number > max_number:
+        max_number = number
+
+print(max_number)
