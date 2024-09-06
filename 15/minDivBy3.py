@@ -5,3 +5,11 @@
 Количество чисел не превышает 1000. Введенные числа не превышают 30 000.
 Программа должна вывести одно число — минимальное число, кратное 3.
 '''
+min = 30001
+b = int(input())
+for i in range(b):
+    number = int(input())
+    if number % 3 == 0 and number < min:
+        min = number
+
+print(min)
