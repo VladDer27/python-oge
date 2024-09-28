@@ -1,11 +1,15 @@
 max = 0
-g = "No"
+g = True
 s = int(input())
 for i in range(s):
     numbers = int(input())
     if numbers > max:
         max = numbers
-    if numbers < 30:
-        g = "Yes"
+    if g and numbers < 30:
+        g = False
 
-print(max, g)
+print(max)
+if g:
+    print("NO")
+else:
+    print("YES")
