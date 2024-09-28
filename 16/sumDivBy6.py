@@ -5,11 +5,4 @@
  Введенные числа не превышают 300.
 Программа должна вывести одно число — сумму чисел, кратных 6.
 '''
-summ = 0
-n = int(input())
-for i in range(n):
-    number = int(input())
-    if number % 6 == 0:
-        summ = summ + number
 
-print(summ)
