@@ -8,4 +8,5 @@ for i in range(s):
     if numbers < 40:
         l = "Yes"
 
-print(count, l)
+print(round(count / s, 1))
+print(l)
