@@ -1,10 +1,10 @@
-n = int(input())
+N = int(input())
+tc = 0
 s = 0
-a = 0
-for i in range(n):
-    x = int(input())
-    if x > 0:
-        s += x
-        a += 1
-print(s / a)
-print(a)
+for i in range(N):
+    number = int(input())
+    if number > 0:
+        tc += 1
+        s += number
+print(s / tc)
+print(tc)
